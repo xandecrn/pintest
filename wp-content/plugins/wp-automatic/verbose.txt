@@ -1,0 +1,78 @@
+*   Trying 216.58.206.1:443...
+* TCP_NODELAY set
+* Connected to translate.googleusercontent.com (216.58.206.1) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-ECDSA-AES128-GCM-SHA256
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=Mountain View; O=Google LLC; CN=*.googleusercontent.com
+*  start date: Jun 18 08:37:07 2019 GMT
+*  expire date: Sep 10 08:16:00 2019 GMT
+*  subjectAltName: host "translate.googleusercontent.com" matched cert's "*.googleusercontent.com"
+*  issuer: C=US; O=Google Trust Services; CN=Google Internet Authority G3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x564c50fce450)
+> POST /translate_f HTTP/2
+Host: translate.googleusercontent.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://translate.google.com/?tr=f&hl=en
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Content-Length: 963
+Content-Type: multipart/form-data; boundary=------------------------7d5ba6c3e85b596b
+
+* Connection state changed (MAX_CONCURRENT_STREAMS == 100)!
+* We are completely uploaded and fine
+< HTTP/2 403 
+< content-type: text/html; charset=UTF-8
+< content-language: en
+< x-content-type-options: nosniff
+< date: Wed, 10 Jul 2019 18:02:09 GMT
+< server: HTTP server (unknown)
+< cache-control: private
+< x-xss-protection: 0
+< alt-svc: quic=":443"; ma=2592000; v="46,43,39"
+< accept-ranges: none
+< vary: Accept-Encoding
+< 
+* Connection #0 to host translate.googleusercontent.com left intact
+* Found bundle for host translate.googleusercontent.com: 0x564c50fe36f0 [can multiplex]
+* Re-using existing connection! (#0) with host translate.googleusercontent.com
+* Connected to translate.googleusercontent.com (216.58.206.1) port 443 (#0)
+* Using Stream ID: 3 (easy handle 0x564c50fce450)
+> POST /translate_f HTTP/2
+Host: translate.googleusercontent.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://translate.google.com/?tr=f&hl=en
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Content-Length: 962
+Content-Type: multipart/form-data; boundary=------------------------440202add8c153b8
+
+* We are completely uploaded and fine
+< HTTP/2 200 
+< date: Wed, 10 Jul 2019 18:02:09 GMT
+< expires: Wed, 10 Jul 2019 18:02:09 GMT
+< cache-control: private, max-age=86400
+< content-type: text/html; charset=UTF-8
+< content-language: fr
+< x-content-type-options: nosniff
+< server: HTTP server (unknown)
+< x-xss-protection: 0
+< alt-svc: quic=":443"; ma=2592000; v="46,43,39"
+< accept-ranges: none
+< vary: Accept-Encoding
+< 
+* Connection #0 to host translate.googleusercontent.com left intact

@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,400italic&subset=latin,cyrillic);
+* {
+	margin: 0px;
+	padding: 0px
+}
+html .mceContentBody {
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	line-height: 21px;
+	padding: 0 20px 20px
+}
+/*====================================*\
+	TEXT
+\*====================================*/
+a {
+	color: #11A8AB;
+	text-decoration: none
+}
+a:hover {
+	color: #333
+}
+h1 {
+	font-size: 18px;
+	line-height: 26px
+}
+h2 {
+	font-size: 17px;
+	line-height: 25px
+}
+h3 {
+	font-size: 16px;
+	line-height: 24px
+}
+h4 {
+	font-size: 15px;
+	line-height: 23px
+}
+h5 {
+	font-size: 14px;
+	line-height: 22px
+}
+h6 {
+	font-size: 13px;
+	line-height: 21px
+}
+p, ul, ol, address, pre, h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0;
+	margin-top: 20px
+}
+ul, ol {
+	list-style-position: inside
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-left: 30px;
+	margin-top: 0
+}
+dl dd {
+	margin-left: 30px
+}
+blockquote {
+	font-style: italic;
+	margin-left: 30px;
+	margin-top: 20px
+}
+pre {
+	white-space: pre;
+	word-wrap: break-word
+}
+table {
+	width: 100%
+}
+table th {
+	font-weight: normal;
+	padding: 4px 10px 5px;
+	text-align: left
+}
+table td {
+	border-bottom: 1px solid #333;
+	padding: 4px 10px 5px
+}
+a + br {
+	display: none
+}
+.mceTemp {
+	clear: both
+}
+.wp-caption {
+	background-color: transparent;
+	border: none;
+	margin-top: 20px;
+	width: auto !important
+}
+.wp-caption.alignleft {
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 25px;
+	margin-top: 26px
+}
+.wp-caption.alignright {
+	float: right;
+	margin-bottom: 15px;
+	margin-left: 25px;
+	margin-top: 26px
+}
+.wp-caption.aligncenter {
+	text-align: center;
+	width: inherit !important
+}
+.wp-caption .wp-caption-text, .wp-caption-dd {
+	color: #999;
+	font-size: 13px;
+	line-height: 17px;
+	margin-top: 0;
+	padding-top: 5px
+}
+/*====================================*\
+	IMAGES
+\*====================================*/
+img {
+	height: auto;
+	max-width: 100%
+}
+img.alignleft {
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 25px;
+	margin-top: 7px
+}
+img.alignright {
+	float: right;
+	margin-bottom: 15px;
+	margin-left: 25px;
+	margin-top: 7px
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}

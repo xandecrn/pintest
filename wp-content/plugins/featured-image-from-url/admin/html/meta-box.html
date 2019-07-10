@@ -1,0 +1,69 @@
+<script><?php include 'js/meta-box.js' ?></script>
+<script><?php include 'js/convert-url.js' ?></script>
+
+<!-- show alt field, image and link if URL was already provided -->
+
+<div style="<?php echo $show_ignore ?>">
+    <input type="checkbox" name="fifu_ignore_auto_set" id="fifu_ignore_auto_set">
+    <label for="fifu_ignore_auto_set">ignore Auto Set First Image</label>
+    <br>
+</div>
+
+<input id="fifu_input_alt" 
+       type="text" 
+       name="fifu_input_alt" 
+       placeholder="alt/title attribute (optional)" 
+       value="<?php echo $alt; ?>" 
+       style="<?php echo $width, $margin, $show_alt ?>" />
+
+<div id="fifu_image"
+     style="<?php echo $height, $margin, $show_image ?> 
+     background:url('<?php echo $url; ?>') no-repeat center center; 
+     background-size:cover;" >
+</div>
+
+<input id="fifu_input_url" 
+       type="text" 
+       name="fifu_input_url" 
+       placeholder="URL" 
+       value="<?php echo $url; ?>"
+       style="<?php echo $width, $margin ?>" />
+
+<center>
+    <a id="fifu_link" 
+       href="#" 
+       onClick="removeImage();" 
+       style="<?php echo $show_link ?>" >remove external featured image</a>
+</center>
+
+<input 
+    type="hidden" 
+    id="fifu_input_image_width" 
+    name="fifu_input_image_width" 
+    value="" >
+
+<input 
+    type="hidden" 
+    id="fifu_input_image_height" 
+    name="fifu_input_image_height" 
+    value="" >
+
+<!-- show preview button if URL was not provided yet -->
+
+<a id="fifu_button" 
+   class="button" 
+   onClick="previewImage();" 
+   style="<?php echo $align, $margin, $show_button ?>" >Preview</a>
+
+<div id="fifu_news" style="position: relative; top:10px; <?php echo $show_button ?>">
+    <p style="font-size: 12px; padding: 10px; border-bottom: 2px solid #ee4394; border-top: 2px solid #ee4394; color: black; background: repeating-linear-gradient(-55deg,white,white 2px,whitesmoke 2px,white 5px);
+       background-color: whitesmoke; border-radius: 15px 5px 15px 5px; position: relative; top: 5px;">Please report any problem to <b>marcel@featuredimagefromurl.com</b></p>
+    <p style="font-size: 12px; padding: 10px; border-bottom: 2px solid orange; border-top: 2px solid orange; color: black; background: repeating-linear-gradient(-55deg,white,white 2px,whitesmoke 2px,white 5px);
+       background-color: whitesmoke; border-radius: 15px 5px 15px 5px; position: relative; top: 5px;">Product Gallery, Video and Slider fields are only available in <a href="admin.php?page=featured-image-from-url#tabs-a"><b>premium</b></a> version</p>
+    <p style="font-size: 12px; padding: 10px; border-bottom: 2px solid #34ba1c; border-top: 2px solid #34ba1c; color: black; background: repeating-linear-gradient(-55deg,white,white 2px,whitesmoke 2px,white 5px);
+       background-color: whitesmoke; border-radius: 15px 5px 15px 5px; position: relative; top: 5px;">New: Integration with <a href="https://wordpress.org/plugins/accelerated-mobile-pages/"><b>Accelerated Mobile Pages</b></a> plugin</p>
+    <!--p style="font-size: 12px; padding: 10px; border-bottom: 2px solid #538dd3; border-top: 2px solid #538dd3; color: black; background: repeating-linear-gradient(-55deg,white,white 2px,whitesmoke 2px,white 5px);
+       background-color: whitesmoke; border-radius: 15px 5px 15px 5px; position: relative; top: 5px;"><b>New</b> (Premium): supports videos from Facebook, Instagram, Imgur and 9GAG</p-->
+    <!--p style="font-size: 12px; padding: 10px; border-bottom: 2px solid #7e600e ; border-top: 2px solid #7e600e ; color: black; background: repeating-linear-gradient(-55deg,white,white 2px,whitesmoke 2px,white 5px);
+       background-color: whitesmoke; border-radius: 15px 5px 15px 5px; position: relative; top: 5px;"><b>New</b>: Compatibility with <a href="https://wclovers.com/knowledgebase/wcfm-custom-fields/"><b>WooCommerce Frontend Manager</b></a> plugin</p-->
+</div>
